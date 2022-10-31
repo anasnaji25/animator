@@ -1,3 +1,4 @@
+import 'package:animator/game_screens/home_game_view.dart';
 import 'package:animator/home_page/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -11,12 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter game',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-       
         primarySwatch: Colors.blue,
       ),
-      home:  LoadingPage(),
+      home: const HomegameView(),
     );
   }
 }
